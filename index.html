@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Challenge / Alura LATAM / ORACLE Next Education / JGA</title>
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header_img">
+                <img src="./img/logo.svg" alt="Alura LATAM">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="encryptor">
+                <form class="encryptor_form">
+                    <div class="text_input">
+                        <textarea name="text_input_area" id="text_input" placeholder="Teclea tu texto" required></textarea>
+                        <div class="text_input_info">
+                            <div class="info">
+                                <img src="./img/signo_exclamacion.svg">
+                                <p id="warning">Sólo usa minúsculas sin acentos ni espacios</p>
+                            </div>
+                            <div class="text_input_buttons">
+                                <input id="encrypt" type="button" value="Encriptar">
+                                <input id="decrypt" type="button" value="Desencriptar">
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+
+                <div class="text_output_section">
+                    <div class="output_content">
+                        <div class="content" id="default_message">
+                            <div class="text_output_img">
+                                <img src="./img/muneco.svg">
+                            </div><p>¡No tengo algún mensaje!</p>
+                            <p>Teclea el mensaje para encriptar o desencriptar.</p>
+                        </div>
+                        <div class = "content hidden" id="result_message">
+                            <textarea name="text_output_area" id="text_output" disabled></textarea>
+                            <button id="copy">Copiar al portapapeles</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="./js/encrypt_challenge.js"></script>
+</html>
